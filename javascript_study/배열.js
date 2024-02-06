@@ -1,6 +1,6 @@
 // 자바스크립트 배열은 자바의 ArrayList와 유사
 
-let numbers1 = [10, 20, 30];
+let numbers1 = [];
 let numbers2 = new Array();
 
 numbers1.push(10);

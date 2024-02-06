@@ -1,6 +1,8 @@
 function add(num1, num2) {
     console.log("num1: " + num1);
     console.log(`num2: ${num2}`); // EL표현식
+    console.log("aaaa" + num1 + "bbbbb" + num2 + "cccc" + num1);
+    console.log(`aaaa${num1}bbbb${num2}cccc${num1}`);
     return num1 + num2;
 }
 
