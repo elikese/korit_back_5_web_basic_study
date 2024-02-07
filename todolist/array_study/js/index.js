@@ -5,14 +5,15 @@ window.onload = () => {
 
 function handleAddClick() {
     const inputData = document.querySelector(".input-text").value;
-    const addButton = document.querySelector(".add-btn")
-    addButton.onclick = () => AddtoStorage(inputData);
+    AddtoStorage(inputData);
 }
 
 function handleEditClick(dataId) {
     const dataListJson = localStorage.getItem("dataList");
     const dataList = dataListJson !== null ? JSON.parse(dataListJson) : new Array();
-    const editButton = document.querySelector(".edit-btn");
+
+    const inputField = document.getElementById(dataId); // 해당 행의 입력 필드
+    const updatedContent = inputField.value;
 
     let findIndex = -1;
     for (let i = 0; i < dataList.length; i++) {
@@ -27,7 +28,7 @@ function handleEditClick(dataId) {
         return;
     }
 
-    dataList[findIndex].content = editButton.previousElementSibling.value;
+    dataList[findIndex].content = updatedContent;
 
     localStorage.setItem("dataList", JSON.stringify(dataList));
     getSavedData();
