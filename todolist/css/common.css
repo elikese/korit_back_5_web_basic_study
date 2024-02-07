@@ -19,3 +19,14 @@ button {
         outline: none;
     }
 }
+
+*::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fbfbfb2f;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: #3333332f;
+    border: 1px solid #dbdbdb;
+}
