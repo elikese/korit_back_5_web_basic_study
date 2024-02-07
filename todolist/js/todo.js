@@ -1,13 +1,5 @@
 window.onload = () => {
     getTodoList();
-
-    const todoInput = document.querySelector(".todo-input");
-
-    todoInput.onkeydown = (e) => {
-        if (e.ctrlKey && e.keyCode === 13) {
-            alert("!!!")
-        }
-    }
 }
 
 function getTodoList() {
