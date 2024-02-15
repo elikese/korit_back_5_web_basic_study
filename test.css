@@ -1,0 +1,66 @@
+div {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    height: 550px;
+    border: 1px solid #333;
+    background-color: #999;
+    position: relative;
+    transition: all 1s;
+}
+
+
+
+.apply-box {
+    width: 500px;
+    height: 100px;
+}
+
+.modal > div > input{
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    width: 550px;
+    height: 250px;
+    border: 1px solid #333;
+    background-color: #eee;
+    visibility: hidden;
+}
+
+.apply-btn{
+    padding: 5px;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.submit-btn{
+    padding: 5px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.shadow {
+    visibility: visible;
+    background-color: #e2e2e2;
+}

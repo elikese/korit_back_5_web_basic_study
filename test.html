@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="test.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <button class="apply-btn" onclick="handleApplyClick();">입력</button>
+        <div class="modal">
+            <h4>회원등록</h4>
+            <div><input type="text" placeholder="이름입력"></div>
+            <div><input type="password" placeholder="패스워드입력"></div>
+            <div><input type="email" placeholder="e-mail입력"></div>
+            <button class="submit-btn">제출</button>
+        </div>
+    </div>
+
+    <script>
+        const container = document.querySelector(".container");
+        const modal = document.querySelector(".modal");
+
+        function handleApplyClick() {
+            container.classList.toggle("shadow");
+            modal.classList.toggle("show");
+        }
+
+    </script>
+
+</body>
+</html>
